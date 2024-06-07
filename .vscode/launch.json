@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/vectorscalarmultiplication", // Path to your compiled executable
+            "cwd": "${workspaceFolder}", // Set current working directory
+            "stopAtEntry": false, // Change to true if you want to stop at the entry point of your program
+            "environment": []
+        },
+        {
+            "name": "CUDA C++: Attach",
+            "type": "cuda-gdb",
+            "request": "attach",
+            "program": "${workspaceFolder}/vectorscalarmultiplication" // Path to your compiled executable
+        }
+    ]
+}
