@@ -24,7 +24,7 @@ void checkCudaError(cudaError_t err, const char* msg) {
 
 int main() {
     // Load image using OpenCV
-    cv::Mat img = cv::imread("input.jpg", cv::IMREAD_COLOR);
+    cv::Mat img = cv::imread("power.jpeg", cv::IMREAD_COLOR);
     if (img.empty()) {
         std::cerr << "Error: Could not load image." << std::endl;
         return -1;
